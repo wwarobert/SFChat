@@ -15,8 +15,8 @@
 	
 		<style type='text/css'>
 		.embeddedServiceHelpButton .helpButton .uiButton {
-			background-color: #48A4D4;
-			font-family: "Verdana", sans-serif;
+			background-color: #48A4D4; //testing something
+			font-family: "Verdana", sans-serif; //and another thing
 		}
 		.embeddedServiceHelpButton .helpButton .uiButton:focus {
 			outline: 1px solid #48A4D4;
@@ -32,18 +32,18 @@
             		//this extraPrechatInfo prevents the creation of a new contact in Salesforce
 			  embedded_svc.settings.extraPrechatInfo = [{
 			      "entityFieldMaps": [{
-		//		"doCreate": false,
-		//		"doFind": true,
-		//		"fieldName": "LastName",
-		//		"isExactMatch": true,
-		//		"label": "Last Name"
-		//	      }, {
-		//		"doCreate": false,
-		//		"doFind": true,
-		//		"fieldName": "FirstName",
-		//		"isExactMatch": false,
-		//		"label": "First Name"
-		//	      }, {
+				"doCreate": false,
+				"doFind": true,
+				"fieldName": "LastName",
+				"isExactMatch": true,
+				"label": "Last Name"
+			      }, {
+				"doCreate": false,
+				"doFind": true,
+				"fieldName": "FirstName",
+				"isExactMatch": false, //allow name variations
+				"label": "First Name"
+			      }, {
 				"doCreate": false,
 				"doFind": true,
 				"fieldName": "Email",
