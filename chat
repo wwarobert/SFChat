@@ -2,9 +2,15 @@
 <html>
 	<header>
 		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+		<style type='text/css'>
+		h2, p {
+		font=family: "Verdana", sans-serif;
+		color: #48a4D4
+		}
+		</style>
 	</header>
 	<body> 
-		<h1>Test embedded chat</h1>
+		<h2>Test embedded chat</h2>
 		<p>chat window should appear in the lower right corner</p>
 	
 		<style type='text/css'>
@@ -21,12 +27,22 @@
 		<script type='text/javascript'>
 		var initESW = function(gslbBaseURL) {
 			embedded_svc.settings.displayHelpButton = true; //Or false
-			embedded_svc.settings.language = ''; //For example, enter 'en' or 'en-US'
+			embedded_svc.settings.language = 'nl'; //For example, enter 'en' or 'en-US'
 
 			embedded_svc.settings.enabledFeatures = ['LiveAgent'];
 			embedded_svc.settings.entryFeature = 'LiveAgent';
             
-            //Todo: add embedded_svc.settings.extraPrechatInfo settings
+            		//this extraPrechatInfo prevents the creation of a new contact in Salesforce
+	  		  embedded_svc.settings.extraPrechatInfo = [{
+			  "entityFieldMaps":[{
+			  	"doCreate":false,"doFind":true,"fieldName":"LastName","isExactMatch":true,"label":"Last Name"
+			  	}, {
+				"doCreate":false,"doFind":true,"fieldName":"FirstName","isExactMatch":true,"label":"First Name"
+				}, {
+				"doCreate":false,"doFind":true,"fieldName":"Email","isExactMatch":true,"label":"Email"
+				}],
+				"entityName":"Contact","saveToTranscript":"Contact","showOnCreate":true
+				}];
             
 			embedded_svc.init(
 			    'https://nibc--Dvl.cs107.my.salesforce.com',
