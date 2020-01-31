@@ -33,13 +33,13 @@
 			  embedded_svc.settings.extraPrechatInfo = [{
 			      "entityFieldMaps": [{
 				"doCreate": false,
-				"doFind": false,
+				"doFind": true,
 				"fieldName": "LastName",
-				"isExactMatch": false,
+				"isExactMatch": true,
 				"label": "Last Name"
 			      }, {
 				"doCreate": false,
-				"doFind": false,
+				"doFind": true,
 				"fieldName": "FirstName",
 				"isExactMatch": false,
 				"label": "First Name"
