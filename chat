@@ -28,21 +28,35 @@
 		var initESW = function(gslbBaseURL) {
 			embedded_svc.settings.displayHelpButton = true; //Or false
 			embedded_svc.settings.language = 'nl_NL'; //For example, enter 'en' or 'en-US'
-
-			embedded_svc.settings.enabledFeatures = ['LiveAgent'];
-			embedded_svc.settings.entryFeature = 'LiveAgent';
             
             		//this extraPrechatInfo prevents the creation of a new contact in Salesforce
-	  		  embedded_svc.settings.extraPrechatInfo = [{
-			  "entityFieldMaps":[{
-			  	"doCreate":false,"doFind":true,"fieldName":"LastName","isExactMatch":true,"label":"Last Name"
-			  	}, {
-				"doCreate":false,"doFind":true,"fieldName":"FirstName","isExactMatch":true,"label":"First Name"
-				}, {
-				"doCreate":false,"doFind":true,"fieldName":"Email","isExactMatch":true,"label":"Email"
-				}],
-				"entityName":"Contact","saveToTranscript":"Contact","showOnCreate":true
-				}];
+			  embedded_svc.settings.extraPrechatInfo = [{
+			      "entityFieldMaps": [{
+				"doCreate": false,
+				"doFind": false,
+				"fieldName": "LastName",
+				"isExactMatch": false,
+				"label": "Last Name"
+			      }, {
+				"doCreate": false,
+				"doFind": false,
+				"fieldName": "FirstName",
+				"isExactMatch": false,
+				"label": "First Name"
+			      }, {
+				"doCreate": false,
+				"doFind": true,
+				"fieldName": "Email",
+				"isExactMatch": true,
+				"label": "Email"
+			      }],
+			      "entityName": "Contact",
+			      "saveToTranscript": "Contact",
+			      "showOnCreate": true
+			    }];
+			    
+			embedded_svc.settings.enabledFeatures = ['LiveAgent'];
+			embedded_svc.settings.entryFeature = 'LiveAgent';
             
 			embedded_svc.init(
 			    'https://nibc--Dvl.cs107.my.salesforce.com',
