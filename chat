@@ -4,7 +4,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
 		<style type='text/css'>
 		h2, p {
-		font=family: "Verdana", sans-serif;
+		font-family: "Verdana", sans-serif;
 		color: #48a4D4
 		}
 		</style>
@@ -27,7 +27,7 @@
 		<script type='text/javascript'>
 		var initESW = function(gslbBaseURL) {
 			embedded_svc.settings.displayHelpButton = true; //Or false
-			embedded_svc.settings.language = 'nl'; //For example, enter 'en' or 'en-US'
+			embedded_svc.settings.language = 'nl_NL'; //For example, enter 'en' or 'en-US'
 
 			embedded_svc.settings.enabledFeatures = ['LiveAgent'];
 			embedded_svc.settings.entryFeature = 'LiveAgent';
