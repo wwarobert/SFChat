@@ -51,9 +51,10 @@
 				"label": "Email"
 			      }],
 			      "entityName": "Contact",
-			      "saveToTranscript": "Contact",
+			      "saveToTranscript": "",
 			      "showOnCreate": true
 			    }];
+			    //TODO: check, will not save the contact to the transcript, even if it found someone?
 			    
 			embedded_svc.settings.enabledFeatures = ['LiveAgent'];
 			embedded_svc.settings.entryFeature = 'LiveAgent';
