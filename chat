@@ -1,7 +1,7 @@
  <!DOCTYPE html>
 <html>
 	<header>
-		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1"></meta>
 		<style type='text/css'>
 		h2, p {
 		font-family: "Verdana", sans-serif;
@@ -29,31 +29,32 @@
 			embedded_svc.settings.displayHelpButton = true; //Or false
 			embedded_svc.settings.language = 'nl_NL'; //For example, enter 'en' or 'en-US'
             
-            		//this extraPrechatInfo prevents the creation of a new contact in Salesforce
-			  embedded_svc.settings.extraPrechatInfo = [{
-			      "entityFieldMaps": [{
-				"doCreate": false,
-				"doFind": true,
-				"fieldName": "LastName",
-				"isExactMatch": true,
-				"label": "Last Name"
-			      }, {
-				"doCreate": false,
-				"doFind": true,
-				"fieldName": "FirstName",
-				"isExactMatch": false, //allow name variations
-				"label": "First Name"
-			      }, {
-				"doCreate": false,
-				"doFind": true,
-				"fieldName": "Email",
-				"isExactMatch": true,
-				"label": "Email"
-			      }],
-			      "entityName": "Contact",
-			      "saveToTranscript": "Contact", //if it is created, it should connect the transcript
-			      "showOnCreate": true //if created, show the contact page
-			    }];
+            		//this extraPrechatInfo should prevent the creation of a new contact in Salesforce
+			 embedded_svc.settings.extraPrechatInfo = [{ 
+				"entityFieldMaps":[{ 
+				"doCreate":false, 
+				"doFind":true, 
+				"fieldName":"LastName", 
+				"isExactMatch":true, 
+				"label":"Last Name" 
+				},{ 
+				"doCreate":false, 
+				"doFind":true, 
+				"fieldName":"FirstName", 
+				"isExactMatch":true, //this is the only difference I see 
+				"label":"First Name" 
+				},{ 
+				"doCreate":false, 
+				"doFind":true, 
+				"fieldName":"Email", 
+				"isExactMatch":true, 
+				"label":"Email" 
+				}], 
+				"entityName":"Contact", 
+				"saveToTranscript":"Contact", 
+				"showOnCreate":true 
+				}]; 
+
 			    
 			embedded_svc.settings.enabledFeatures = ['LiveAgent'];
 			embedded_svc.settings.entryFeature = 'LiveAgent';
