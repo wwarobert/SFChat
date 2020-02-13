@@ -43,7 +43,19 @@
 				"fieldName":"FirstName", 
 				"isExactMatch":true, //this is the only difference I see 
 				"label":"First Name" 
-				}],
+				}, {
+    				"doCreate":false,
+    				"doFind":true,
+   			 	"fieldName":"Email",
+    				"isExactMatch":true,
+				"label":"Email"
+  				}, {
+    				"doCreate":false,
+    				"doFind":true,
+   			 	"fieldName":"Subject",
+    				"isExactMatch":true,
+				"label":"Subject"
+  				}],
 				"entityName":"Contact"
 				}]; 
 
