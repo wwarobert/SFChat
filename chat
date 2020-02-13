@@ -49,9 +49,7 @@
 				"isExactMatch":true, 
 				"label":"Email" 
 				}],
-				"entityName":"Contact", 
-				"saveToTranscript":"Contact", 
-				"showOnCreate":true 
+				"entityName":"Contact"
 				}]; 
 
 			    
