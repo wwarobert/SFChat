@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 	<header>
 		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1"></meta>
@@ -50,7 +50,6 @@
 				"isExactMatch":true, 
 				"label":"Email" 
 				}],
-				"doCreate":false,
 				"entityName":"Contact", 
 				"saveToTranscript":"Contact", 
 				"showOnCreate":true 
