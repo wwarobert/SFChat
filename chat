@@ -44,7 +44,6 @@
 				"isExactMatch":true, //this is the only difference I see 
 				"label":"First Name" 
 				},{ 
-				"doCreate":false, 
 				"doFind":true, 
 				"fieldName":"Email", 
 				"isExactMatch":true, 
