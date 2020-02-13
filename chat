@@ -30,34 +30,28 @@
 			embedded_svc.settings.language = 'nl_NL'; //For example, enter 'en' or 'en-US'
             
             		//this extraPrechatInfo should prevent the creation of a new contact in Salesforce
-			 embedded_svc.settings.extraPrechatInfo = [{ 
+			embedded_svc.settings.extraPrechatInfo = [{ 
 				"entityFieldMaps":[{ 
-				"doCreate":false, 
-				"doFind":true, 
-				"fieldName":"LastName", 
-				"isExactMatch":true, 
-				"label":"Last Name" 
+					"doCreate":false, 
+					"doFind":true, 
+					"fieldName":"LastName", 
+					"isExactMatch":true, 
+					"label":"Last Name" 
 				},{ 
-				"doCreate":false, 
-				"doFind":true, 
-				"fieldName":"FirstName", 
-				"isExactMatch":true, //this is the only difference I see 
-				"label":"First Name" 
-				}, {
-    				"doCreate":false,
-    				"doFind":true,
-   			 	"fieldName":"Email",
-    				"isExactMatch":true,
-				"label":"Email"
-  				}, {
-    				"doCreate":false,
-    				"doFind":true,
-   			 	"fieldName":"Subject",
-    				"isExactMatch":true,
-				"label":"Subject"
+					"doCreate":false, 
+					"doFind":true, 
+					"fieldName":"FirstName", 
+					"isExactMatch":true, //this is the only difference I see 
+					"label":"First Name" 
+				},{
+    					"doCreate":false,
+    					"doFind":true,
+   			 		"fieldName":"Email",
+    					"isExactMatch":true,
+					"label":"Email"
   				}],
 				"entityName":"Contact"
-				}]; 
+			}]; 
 
 			    
 			embedded_svc.settings.enabledFeatures = ['LiveAgent'];
