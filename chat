@@ -33,21 +33,16 @@
 			 embedded_svc.settings.extraPrechatInfo = [{ 
 				"entityFieldMaps":[{ 
 				"doCreate":false, 
-				"doFind":false, 
+				"doFind":true, 
 				"fieldName":"LastName", 
 				"isExactMatch":true, 
 				"label":"Last Name" 
 				},{ 
 				"doCreate":false, 
-				"doFind":false, 
+				"doFind":true, 
 				"fieldName":"FirstName", 
 				"isExactMatch":true, //this is the only difference I see 
 				"label":"First Name" 
-				},{ 
-				"doFind":true, 
-				"fieldName":"Email", 
-				"isExactMatch":true, 
-				"label":"Email" 
 				}],
 				"entityName":"Contact"
 				}]; 
