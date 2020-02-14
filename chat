@@ -35,17 +35,20 @@
 					"doCreate":false, 
 					"doFind":true, 
 					"fieldName":"LastName", 
-					"isExactMatch":true 
+					"isExactMatch":true,
+					"label":"Last Name"
 				},{ 
 					"doCreate":false, 
 					"doFind":true, 
 					"fieldName":"FirstName", 
-					"isExactMatch":true
+					"isExactMatch":true,
+					"label":"First Name"
 				},{
     					"doCreate":false,
     					"doFind":true,
    			 		"fieldName":"Email",
-    					"isExactMatch":true
+    					"isExactMatch":true,
+					"label":"Email"
   				}],
 				"entityName":"Contact"
 			}]; 
