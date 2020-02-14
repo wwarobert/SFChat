@@ -36,19 +36,19 @@
 					"doFind":true, 
 					"fieldName":"LastName", 
 					"isExactMatch":true, 
-					"label":"Last Name" 
+					"label":"Achternaam" 
 				},{ 
 					"doCreate":false, 
 					"doFind":true, 
 					"fieldName":"FirstName", 
 					"isExactMatch":true, //this is the only difference I see 
-					"label":"First Name" 
+					"label":"Voornaam" 
 				},{
     					"doCreate":false,
     					"doFind":true,
    			 		"fieldName":"Email",
     					"isExactMatch":true,
-					"label":"Email"
+					"label":"E-mail"
   				}],
 				"entityName":"Contact"
 			}]; 
