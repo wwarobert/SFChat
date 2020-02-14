@@ -27,7 +27,7 @@
 		<script type='text/javascript'>
 		var initESW = function(gslbBaseURL) {
 			embedded_svc.settings.displayHelpButton = true; //Or false
-			embedded_svc.settings.language = 'nl_NL'; //For example, enter 'en' or 'en-US'
+			embedded_svc.settings.language = 'nl-NL'; //For example, enter 'en' or 'en-US'
             
             		//this extraPrechatInfo should prevent the creation of a new contact in Salesforce
 			embedded_svc.settings.extraPrechatInfo = [{ 
