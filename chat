@@ -36,7 +36,7 @@
 					"doFind":true, 
 					"fieldName":"LastName", 
 					"isExactMatch":true,
-					"label":"Last Name"
+					"label":"Some label"
 				},{ 
 					"doCreate":false, 
 					"doFind":true, 
