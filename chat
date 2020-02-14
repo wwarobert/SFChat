@@ -35,20 +35,17 @@
 					"doCreate":false, 
 					"doFind":true, 
 					"fieldName":"LastName", 
-					"isExactMatch":true, 
-					"label":"Achternaam" 
+					"isExactMatch":true 
 				},{ 
 					"doCreate":false, 
 					"doFind":true, 
 					"fieldName":"FirstName", 
-					"isExactMatch":true, //this is the only difference I see 
-					"label":"Voornaam" 
+					"isExactMatch":true
 				},{
     					"doCreate":false,
     					"doFind":true,
    			 		"fieldName":"Email",
-    					"isExactMatch":true,
-					"label":"E-mail"
+    					"isExactMatch":true
   				}],
 				"entityName":"Contact"
 			}]; 
